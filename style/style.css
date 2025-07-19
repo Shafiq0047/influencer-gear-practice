@@ -2,6 +2,9 @@
 
 /* Shared Style */
 
+html{
+    
+}
 .poppins-regular {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -104,6 +107,68 @@
     
 }
 
+/* Popular Card Section Style */
+
+
+.popular-title{
+    text-align: center;
+    margin: 30px auto;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+.popular-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1047px;
+    margin: 0 auto;
+    grid-gap: 30px;
+  
+}
+.popular-card{
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+    max-width: 329px;
+    max-height: 476;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    width: 100%;
+}
+.popular-img{
+    width: 100%;
+}
+.card-title{
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+.card-price{
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+.card-ratings{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+.card-description{
+    font-size: 0.8rem;
+    font-weight: 700;
+    width: 196px;
+    margin-top: 0;
+}
+.see-section{
+    max-width: 1047px;
+    text-align: right;
+    margin: 0 auto;
+}
+.see-more{
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: 700;
+}
 
 
 @media screen and (max-width:576px) {
@@ -145,6 +210,11 @@
         grid-template-columns: repeat(4, 1fr);
         justify-content: center;
         align-items: center; 
+   }
+   .popular-section{
+
+    grid-template-columns: repeat(1, 1fr);
+
    }
 }
 
