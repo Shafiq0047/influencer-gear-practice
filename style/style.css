@@ -89,6 +89,23 @@
    
 }
 
+
+/* Sponsor Section Style */
+
+.sponsor{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    max-width: 1110px;
+    justify-content: center;
+    margin: 70px auto;
+    border-top: 1px solid rgba(192, 204, 218, 0.1);
+    border-bottom: 1px solid rgba(192, 204, 218, 0.1);
+    padding: 36px;
+    
+}
+
+
+
 @media screen and (max-width:576px) {
     .navbar, .navigation{
         flex-direction: column;
@@ -124,6 +141,11 @@
    .banner-description{
     font-size: 1.43rem;
    }
+   .sponsor{
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center; 
+   }
 }
 
 @media screen and (min-width:576px) and (max-width:992px){
@@ -154,5 +176,11 @@
         margin-top: 0;
         
      }
+     .sponsor{
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center; 
+        margin-left: 80px;
+   }
   
 }
