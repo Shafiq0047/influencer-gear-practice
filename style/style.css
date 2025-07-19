@@ -41,6 +41,7 @@
 }
 .navigation-list{
     list-style: none;
+    transition: ease-in-out .4s ;
 }
 .nav-icons{
     width: 24px;
@@ -48,7 +49,18 @@
 }
 .navigation-list a{
     text-decoration: none;
+    
 }
+.navigation-list:hover{
+    padding: 10px 20px;
+    background-color: rgba(224, 44, 109, 1);
+    transform: scale(1.2);
+}
+.navigation-list a:hover{
+    color: white;
+}
+
+
 /* Banner Style Section */
 
 .banner{
@@ -74,9 +86,16 @@
 .btn-primary{
     color: white;
     background-color: rgba(224, 44, 109, 1);
-    padding: 10px 56px 10px 24px;
+    padding: 10px 30px 10px 24px;
     border: none;
     border-radius: 40px;
+    font-weight: 800;
+    transition: ease-in-out .4s;
+}
+.btn-primary:hover{
+    padding: 10px 20px;
+    transform: scale(1.3);
+    
 }
 .banner-img{
     max-width: 475px;
@@ -199,10 +218,71 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 24px;
-    padding-right: 56px;
+    padding-right: 30px;
     border: none;
     font-weight: 800;
+    transition: ease-in-out .4s;
 }
+.feature-btn:hover{
+    padding: 10px 20px;
+    transform: scale(1.3);
+}
+
+
+/* Footer Section Style */
+
+.footer-section{
+    width: 100%;
+    background-color: rgb(10,8,38);
+    height: 250px;
+    margin-top: 70px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(1,);
+    align-items: center;
+    
+}
+.footer-details{
+    max-width: 250px;
+    padding: 50px auto;
+    text-align: center;
+    
+    
+}
+.footer-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+.footer-desc{
+    font-weight: 700;
+    font-size: .8rem;
+    color: white;
+}
+.footer-icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    
+}
+.icon-bg{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.footer-img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
 
 @media screen and (max-width:576px) {
     .navbar, .navigation{
