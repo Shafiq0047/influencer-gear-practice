@@ -49,3 +49,41 @@
 .navigation-list a{
     text-decoration: none;
 }
+/* Banner Style Section */
+
+.banner{
+    max-width: 1155px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    gap: 140px;
+}
+.banner-headings{
+    max-width: 582px;
+}
+.banner-title{
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+.banner-description{
+    font-weight: 600;
+}
+.btn-primary{
+    color: white;
+    background-color: rgba(224, 44, 109, 1);
+    padding: 10px 56px 10px 24px;
+    border: none;
+    border-radius: 40px;
+}
+.banner-img{
+    max-width: 475px;
+    max-height: 475PX;
+    background: url('../images/Circle design.svg') no-repeat center; 
+    width: 100%;
+}
+.banner-img img {
+    width: 100%;
+   
+}
